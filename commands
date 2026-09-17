@@ -1,4 +1,4 @@
 docker build -t my-live-hub-image .
 docker run -d --name my-live-hub -p 3001:3001 my-live-hub-image
 docker compose up -d --build
-
+docker-compose up -d --build
