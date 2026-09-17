@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  live-hub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-live-hub
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
